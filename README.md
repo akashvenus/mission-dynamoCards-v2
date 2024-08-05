@@ -2,7 +2,6 @@
 
 [![Model](https://img.shields.io/badge/-Gemini%20Pro-8E75B2?logo=google-gemini&logoColor=white)](https://developers.google.com/generative/models/gemini)
 [![Python](https://img.shields.io/badge/-Python%203.10-3776AB?logo=python&logoColor=white)](https://www.python.org/)
-[![Database](https://img.shields.io/badge/database-Chroma%20DB-blue.svg)](https://docs.chromadb.com/)
 [![UI](https://img.shields.io/badge/-React-61DAFB?logo=react&logoColor=white)](https://react.dev/)
 [![Backend](https://img.shields.io/badge/-FastAPI-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
 
