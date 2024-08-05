@@ -14,7 +14,6 @@ DynamoCards is a comprehensive application designed to transform lengthy YouTube
 * **Language:** Python
 * **Model:** Gemini Pro 1.0
 * **Cloud:** Vertex AI
-* **Database:** ChromaDB
 
 ### How it Works
 DynamoCards operates through a seamless process:
