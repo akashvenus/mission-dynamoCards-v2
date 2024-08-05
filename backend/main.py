@@ -2,6 +2,14 @@ from fastapi import FastAPI
 from pydantic import BaseModel, HttpUrl
 from fastapi.middleware.cors import CORSMiddleware
 from services.genai import (YoutubeProcessor, GeminiProcessor)
+import json
+from . import servicekey
+
+
+with open('servicekey.json', 'r') as f:
+    data = json.load(f)
+
+project_id = data['project_id']
 
 class VideoAnalysisRequest(BaseModel):
     youtube_link : HttpUrl
@@ -9,7 +17,7 @@ class VideoAnalysisRequest(BaseModel):
 
 app = FastAPI()
 
-genai_processor = GeminiProcessor("gemini-1.0-pro-002","")
+genai_processor = GeminiProcessor("gemini-1.0-pro-002",project_id) #Enter your project id here instead of abcde
 
 #Configure CORS
 app.add_middleware(
